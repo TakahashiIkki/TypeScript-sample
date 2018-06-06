@@ -1,4 +1,8 @@
-let message = '';
-message = 2;
-console.log("Hello!" + message);
+let value = 0;
+if (value) {
+    console.log("定義済み!");
+}
+else {
+    console.log("未定義");
+}
 //# sourceMappingURL=app.js.map

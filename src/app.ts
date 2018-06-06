@@ -1,5 +1,8 @@
-let message : String = '';
+let value : number = 1;
+let str : String = "1";
 
-message = "TypeScript World"
-
-console.log("Hello!" + message);
+if (value == str) {
+    console.log("同じ");
+} else {
+    console.log("違う");
+}
