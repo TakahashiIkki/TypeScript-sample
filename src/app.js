@@ -1,9 +1,11 @@
-let value = 1;
-let str = "1";
-if (value === str) {
-    console.log("同じ");
+// classを指定してクラス化
+class MyClass {
+    // コンストラクター
+    constructor() {
+        this.message = 'TypeScript';
+        console.log('Hello! Node.js & ' + this.message);
+    }
 }
-else {
-    console.log("違う");
-}
+// Defaultクラスのインスタンスを作る
+const myclass = new MyClass();
 //# sourceMappingURL=app.js.map

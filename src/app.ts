@@ -1,8 +1,12 @@
-let value : number = 1;
-let str : String = "1";
+// classを指定してクラス化
+class MyClass {
+    message: String = 'TypeScript';
 
-if (value === str) {
-    console.log("同じ");
-} else {
-    console.log("違う");
+    // コンストラクター
+    constructor() {
+        console.log('Hello! Node.js & ' + this.message);
+    }
 }
+   
+// Defaultクラスのインスタンスを作る
+const myclass = new MyClass();
