@@ -1,20 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-const http = require("http");
+const ServerModule_1 = require("./ServerModule");
 // classを指定してクラス化
 class MyClass {
     // コンストラクター
     constructor() {
-        this.message = 'TypeScript';
-        // httpサーバーの設定
-        const server = http.createServer((request, response) => this.requestHandler(request, response));
-        // サーバーを起動してリクエスト待機状態とする.
-        server.listen('5001');
-    }
-    requestHandler(request, response) {
-        response.end('Hello World & ' + this.message + ' for HTTP');
+        // exportしてきたServerFunctionクラスのインスタンスを作成.
+        const serverFunction = new ServerModule_1.ServerFunction();
+        // 関数を実行する。
+        serverFunction.initServer();
     }
 }
-// Defaultクラスのインスタンスを作る
+// myclassクラスのインスタンスを作る
 const myclass = new MyClass();
 //# sourceMappingURL=app.js.map
