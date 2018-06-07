@@ -11,5 +11,5 @@ class MyClass {
     }
 }
    
-// myclassクラスのインスタンスを作る
+// Myclassクラスのインスタンスを作る
 const myclass = new MyClass();
